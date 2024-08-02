@@ -1,0 +1,141 @@
+.container {
+    display: flex;
+    justify-content: flex;
+    flex-direction: column;
+    max-width: 800px;
+    margin: 60px auto 0 auto;
+    padding: 20px;
+    background-color: #262626;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+    filter: blur(2px);
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile .social-media{
+    display: block;
+}
+
+.profile .banner-image{
+    position: relative;
+    width: calc(100% + 40px);
+    margin: -20px -20px;
+    height: 250px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.profile .profile-image{
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    top: 15%;
+    object-fit: cover;
+    z-index: 2;
+    transition: transform 0.3s ease;
+}
+
+.profile .profile-image:hover{
+    transform: scale(1.1);
+}
+
+.profile h2 {
+    margin: 70px 0 0 0;
+    font-size: 20px;
+}
+
+.profile .social-media{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile .social-media p{
+    text-align: center;
+    color: #fff;
+    margin: 5px;
+}
+
+.profile .img-links img{
+    margin: 5px 2px;
+    width: 25px;
+    height: 25px;
+}
+
+.profile .email a{
+    color: #fff;
+    font-style: none;
+    text-decoration: none;
+}
+
+.profile .email a:hover{
+    text-decoration: underline;
+}
+.posts article {
+    margin: 50px 0 20px 0;
+}
+
+.posts article .about-me{
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.posts article h2 {
+    margin: 0 0 10px 0;
+    font-size: 22px;
+}
+
+.posts article .text{
+    margin: 10 0 0 0px;
+    color: #fff;
+}
+
+.posts article ul li{
+    margin: 3px;
+    color: #fff;
+}
+
+@media (max-width: 850px){
+
+    .profile h2{
+        margin: 55px 0 0;
+    }
+    .profile .profile-image{
+        top: 7%;
+    }
+
+    .profile .banner-image{
+        height: 150px;
+        width: calc(100% + 40px);
+        margin: 0 -20px;
+        border-radius: 0;
+        margin-top: -20px;
+    }
+
+    .profile .img-links img{
+        margin: 5px 2px;
+        width: 30px;
+        height: 30px;
+    
+    }
+}

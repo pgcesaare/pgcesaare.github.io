@@ -1,0 +1,50 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;    
+
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo .btn-contact{
+    font-size: 15px;
+    border: none;
+    margin: 10px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 15px;
+    color: #fff;
+    background-color: #464545;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+header .logo .btn-contact:hover{
+    transform: scale(1.1);
+}
+
+header .logo h1 {
+    padding: 10px 0 20px 10px;
+    margin: 0;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+@media (max-width: 850px){
+
+    header .logo.scrolled h1{
+        text-shadow: 
+        2px  0px 0px #000,
+        0px  2px 0px #000,
+       -2px  0px 0px #000,
+        0px -2px 0px #000;
+    }
+
+
+
+}
